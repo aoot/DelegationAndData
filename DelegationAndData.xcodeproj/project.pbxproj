@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		38E7D31A2048AD99005E566B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E7D3192048AD99005E566B /* AppDelegate.swift */; };
-		38E7D31C2048AD99005E566B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E7D31B2048AD99005E566B /* ViewController.swift */; };
 		38E7D31F2048AD99005E566B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38E7D31D2048AD99005E566B /* Main.storyboard */; };
 		38E7D3212048AD99005E566B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 38E7D3202048AD99005E566B /* Assets.xcassets */; };
 		38E7D3242048AD99005E566B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38E7D3222048AD99005E566B /* LaunchScreen.storyboard */; };
 		38E7D32F2048AD99005E566B /* DelegationAndDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E7D32E2048AD99005E566B /* DelegationAndDataTests.swift */; };
 		38E7D33A2048AD99005E566B /* DelegationAndDataUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E7D3392048AD99005E566B /* DelegationAndDataUITests.swift */; };
+		38E7D34C2048AF5E005E566B /* VCInitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E7D34B2048AF5E005E566B /* VCInitialViewController.swift */; };
+		38E7D34E2048AF67005E566B /* VCFinalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E7D34D2048AF67005E566B /* VCFinalViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +37,6 @@
 /* Begin PBXFileReference section */
 		38E7D3162048AD99005E566B /* DelegationAndData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DelegationAndData.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		38E7D3192048AD99005E566B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		38E7D31B2048AD99005E566B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		38E7D31E2048AD99005E566B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		38E7D3202048AD99005E566B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		38E7D3232048AD99005E566B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +47,8 @@
 		38E7D3352048AD99005E566B /* DelegationAndDataUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DelegationAndDataUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		38E7D3392048AD99005E566B /* DelegationAndDataUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelegationAndDataUITests.swift; sourceTree = "<group>"; };
 		38E7D33B2048AD99005E566B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		38E7D34B2048AF5E005E566B /* VCInitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCInitialViewController.swift; sourceTree = "<group>"; };
+		38E7D34D2048AF67005E566B /* VCFinalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCFinalViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +99,9 @@
 		38E7D3182048AD99005E566B /* DelegationAndData */ = {
 			isa = PBXGroup;
 			children = (
+				38E7D34B2048AF5E005E566B /* VCInitialViewController.swift */,
+				38E7D34D2048AF67005E566B /* VCFinalViewController.swift */,
 				38E7D3192048AD99005E566B /* AppDelegate.swift */,
-				38E7D31B2048AD99005E566B /* ViewController.swift */,
 				38E7D31D2048AD99005E566B /* Main.storyboard */,
 				38E7D3202048AD99005E566B /* Assets.xcassets */,
 				38E7D3222048AD99005E566B /* LaunchScreen.storyboard */,
@@ -259,8 +262,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				38E7D31C2048AD99005E566B /* ViewController.swift in Sources */,
+				38E7D34C2048AF5E005E566B /* VCInitialViewController.swift in Sources */,
 				38E7D31A2048AD99005E566B /* AppDelegate.swift in Sources */,
+				38E7D34E2048AF67005E566B /* VCFinalViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -428,6 +432,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = DelegationAndData/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "github.com-aoot.DelegationAndData";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -442,6 +447,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = DelegationAndData/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "github.com-aoot.DelegationAndData";
 				PRODUCT_NAME = "$(TARGET_NAME)";
